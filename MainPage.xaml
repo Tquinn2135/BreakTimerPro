@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreakTimer.MainPage" x:Name="FtmMainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,30"
+            VerticalOptions="Center">
+            
+            <Label x:Name="lblDisplay" Text="Time Remaining" HorizontalOptions="Center"
+                   FontSize="Title" Padding="20,20"/>
+            
+            <Button x:Name = "btn5min" Text="5 minute" Clicked="Btn5min_OnClicked"/>
+            <Button x:Name = "btn10min" Text="10 minute" Clicked="Btn10min_OnClicked"/>
+            <Button x:Name = "btn15min" Text="15 minute" Clicked="Btn15min_OnClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
